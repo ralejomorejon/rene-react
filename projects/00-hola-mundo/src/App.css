@@ -1,0 +1,69 @@
+article{
+    font-size: .8rem;
+    display: flex;
+    padding: 6px 12px;
+    border-radius: 40px;
+
+}
+article header{
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    width: 72%;
+}
+article header div{
+    display: flex;
+    flex-direction: column;
+}
+
+article header strong{
+    font-size: 16px;
+}
+article header span{
+    margin-top: -3px;
+    opacity: .6;
+}
+
+article header img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+article button{
+    color: #222;
+    border: none;
+    width: 160px;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 5px 14px;
+    background-color: #eee;
+    font-weight: bold;
+    margin-left: 16px;
+    cursor: pointer;
+
+}
+article button:hover{
+    opacity: .8;
+    transition: .3s ease opacity;
+    color: #000;
+}
+.btnFollowing{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #bbb;
+}
+.btnFollowing:hover{
+    background-color: hwb(0 12% 2% / 0.154);
+    color: #f44;
+    border: 1px solid hsl(0, 100%, 71%);
+    transition: .3s ease background-color, color;
+}
+.btnFollowing:hover > .stop-follow{
+    display: block;
+}
+.btnFollowing:hover > .follow{
+    display: none;
+}
+.stop-follow{
+    display: none;
+}
